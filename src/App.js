@@ -1,25 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
+import './styles/App.css';
+import Heading from './component/Heading';
+import FormImage from './component/FormImage';
+import FormSubmit from './component/FormSubmit';
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <section className="App">
+      <div className="login-form">
+            <Heading name1= "Login page" name2 = "Designed with adobe XD" idName= "main"/>
+            <div className="container">
+                <div className= "sub-container">
+                  <div className="main">
+                          <FormImage imageUrl="assets/images/imge.png"/>
+                          <FormSubmit />
+                    </div>
+                </div>
+                  
+            </div>
+      </div>
+      
+    </section>
   );
 }
+
 
 export default App;
